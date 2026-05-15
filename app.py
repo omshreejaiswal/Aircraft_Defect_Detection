@@ -4,8 +4,14 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
-import cv2
 import streamlit as st
+
+try:
+    import cv2
+except ImportError as exc:
+    st.error("OpenCV failed to load in the Streamlit environment.")
+    st.code(str(exc))
+    st.stop()
 
 from database import InspectionDatabase
 from model import InspectionResult, analyze_image, load_models
