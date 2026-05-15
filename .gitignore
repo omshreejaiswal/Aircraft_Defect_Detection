@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+venv*/
+env/
+ENV/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Application runtime outputs
+logs/
+reports/
+*.db
+*.sqlite
+*.sqlite3
+
+# Datasets and generated ML artifacts
+data/
+datasets/
+runs/
+models/
+*.pth
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.mlmodel
+
+# Keep the small YOLOv8 nano bootstrap weight used as a fallback demo model.
+!yolov8n.pt
+
+# Local plotting/cache files
+.matplotlib/
+
+# Notebooks and checkpoints
+.ipynb_checkpoints/
+
+# macOS / editor files
+.DS_Store
+._*
+.vscode/
+.idea/
